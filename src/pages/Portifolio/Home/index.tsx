@@ -1,7 +1,7 @@
 import backgroundImage from '../../../assets/images/backgroundImage.jpg'
 import { Container, Image, MainContainer, Overlay, Text } from './styles'
 
-export function Portifolio() {
+export function Portfolio() {
   return (
     <MainContainer>
       <Container>

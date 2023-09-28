@@ -1,21 +1,18 @@
 import { Routes, Route } from 'react-router-dom'
-// import { Home } from './pages/Home'
-import { History } from './pages/History'
-// import { DefaultLayout } from './layouts/DefaultLayout'
-import { PortifolioLayout } from './layouts/PortifolioLayout'
-import { Portifolio } from './pages/Portifolio/Home'
+import { PortfolioLayout } from './layouts/PortifolioLayout'
+import { Portfolio } from './pages/Portifolio/Home'
+import { MainProjects } from './components/MainProjects'
+// import { IgniteTimer } from './projects/IgniteTimer'
+import { Home } from './projects/IgniteTimer/pages/Home'
 
 export function Router() {
   return (
     <Routes>
-      {/* <Route path="/test" element={<DefaultLayout />}>
-        <Route path="/page" element={<Home />} />
-        <Route path="/history" element={<History />} />
-      </Route> */}
-
-      <Route path="/" element={<PortifolioLayout />}>
-        <Route path="/" element={<Portifolio />} />
-        <Route path="/history" element={<History />} />
+      <Route path="/" element={<PortfolioLayout />}>
+        <Route path="home" element={<Portfolio />} />
+        <Route path="projects" element={<MainProjects />} />
+        {/* </Route> */}
+        {/* <Route path="timer" element={<Home />} /> */}
       </Route>
     </Routes>
   )

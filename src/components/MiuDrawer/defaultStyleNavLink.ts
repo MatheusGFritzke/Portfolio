@@ -1,1 +1,4 @@
-export const defaultStyleObject = { textDecoration: 'none', color: 'black' }
+export const defaultStyleObject = {
+  textDecoration: 'none',
+  color: 'black',
+}
