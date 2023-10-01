@@ -58,7 +58,7 @@ export const CardContainer = styled.div`
       height: 30rem;
 
       &:hover {
-        filter: grayscale(50%) blur(2px);
+        filter: grayscale(0%) blur(2px);
       }
     }
   }
