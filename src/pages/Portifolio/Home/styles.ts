@@ -33,5 +33,5 @@ export const Text = styled.h1`
   margin: 0;
   font-size: 2.5rem;
   font-family: 'Roboto', serif;
-  font-weight: 300;
+  font-weight: bold;
 `
