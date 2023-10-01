@@ -2,9 +2,8 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import { PortfolioLayout } from './layouts/PortifolioLayout'
 import { Portfolio } from './pages/Portifolio/Home'
 import { MainProjects } from './components/MainProjects'
-// import { IgniteTimer } from './projects/IgniteTimer'
-import { Home } from './projects/IgniteTimer/pages/Home'
-import { History } from './projects/IgniteTimer/pages/History'
+import { Timer } from './projects/IgniteTimer/pages/Timer'
+import { MainHistory } from './projects/IgniteTimer/pages/MainHistory'
 
 export function Router() {
   return (
@@ -12,8 +11,8 @@ export function Router() {
       <Route path="/" element={<PortfolioLayout />}>
         <Route path="/" element={<Portfolio />} />
         <Route path="/projects" element={<MainProjects />} />
-        <Route path="/projects/timer" element={<Home />} />
-        <Route path="/projects/timer/history" element={<History />} />
+        <Route path="/projects/timer/countdown" element={<Timer />} />
+        <Route path="/projects/timer/history" element={<MainHistory />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Route>

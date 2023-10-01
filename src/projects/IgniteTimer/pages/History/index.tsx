@@ -9,15 +9,15 @@ export function History() {
 
   return (
     <HistoryContainer>
-      <h1>Meu historico</h1>
+      <h1>Meu histórico</h1>
 
       <HistoryList>
         <table>
           <thead>
             <tr>
               <th>Tarefa</th>
-              <th>Duracao</th>
-              <th>Inicio</th>
+              <th>Duração</th>
+              <th>Início</th>
               <th>Status</th>
             </tr>
           </thead>
@@ -35,7 +35,7 @@ export function History() {
                   </td>
                   <td>
                     {cycle.finishedDate && (
-                      <Status statusColor="green">Concluido</Status>
+                      <Status statusColor="green">Concluído</Status>
                     )}
                     {cycle.interruptedDate && (
                       <Status statusColor="red">Interrompido</Status>

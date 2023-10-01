@@ -3,7 +3,10 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
+  margin: auto;
   justify-content: space-between;
+  max-width: 60%;
+  margin-top: 8rem;
 
   nav {
     display: flex;

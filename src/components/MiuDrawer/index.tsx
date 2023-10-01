@@ -1,12 +1,7 @@
 import { Drawer, Typography, IconButton } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import { useState } from 'react'
-import {
-  ProjectorScreenChart,
-  CaretLeft,
-  HouseLine,
-  Timer,
-} from 'phosphor-react'
+import { ProjectorScreenChart, CaretLeft, HouseLine } from 'phosphor-react'
 import {
   ItemListDiv,
   ItemText,
@@ -62,30 +57,6 @@ export const MuiDrawer = () => {
                 <ItemListDiv>
                   <ProjectorScreenChart size="1.5rem" />
                   <ItemText>Projetos</ItemText>
-                </ItemListDiv>
-              </NavLink>
-            </NavLinkContainer>
-            <NavLinkContainer>
-              <NavLink
-                to="projects/timer"
-                style={defaultStyleObject}
-                onClick={() => setIsDrawerOpen(false)}
-              >
-                <ItemListDiv>
-                  <Timer size="1.5rem" />
-                  <ItemText>timer</ItemText>
-                </ItemListDiv>
-              </NavLink>
-            </NavLinkContainer>
-            <NavLinkContainer>
-              <NavLink
-                to="projects/timer/history"
-                style={defaultStyleObject}
-                onClick={() => setIsDrawerOpen(false)}
-              >
-                <ItemListDiv>
-                  <Timer size="1.5rem" />
-                  <ItemText>history</ItemText>
                 </ItemListDiv>
               </NavLink>
             </NavLinkContainer>
