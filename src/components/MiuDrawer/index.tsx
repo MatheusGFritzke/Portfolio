@@ -43,7 +43,7 @@ export const MuiDrawer = () => {
             </BackItem>
             <NavLinkContainer>
               <NavLink
-                to="/home"
+                to="/"
                 style={defaultStyleObject}
                 onClick={() => setIsDrawerOpen(false)}
               >
@@ -67,13 +67,25 @@ export const MuiDrawer = () => {
             </NavLinkContainer>
             <NavLinkContainer>
               <NavLink
-                to="/timer"
+                to="projects/timer"
                 style={defaultStyleObject}
                 onClick={() => setIsDrawerOpen(false)}
               >
                 <ItemListDiv>
                   <Timer size="1.5rem" />
                   <ItemText>timer</ItemText>
+                </ItemListDiv>
+              </NavLink>
+            </NavLinkContainer>
+            <NavLinkContainer>
+              <NavLink
+                to="projects/timer/history"
+                style={defaultStyleObject}
+                onClick={() => setIsDrawerOpen(false)}
+              >
+                <ItemListDiv>
+                  <Timer size="1.5rem" />
+                  <ItemText>history</ItemText>
                 </ItemListDiv>
               </NavLink>
             </NavLinkContainer>

@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0.25rem 0 0 1rem;
 `
 export const MenuIcon = styled.div`
   gap: 0.5rem;
@@ -23,7 +23,7 @@ export const MenuContainer = styled.div`
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 100%; /* Inicialmente, a altura é zero para ocultar o menu */
+  height: 100%;
   padding: 0 0.5rem;
   overflow: hidden;
 `

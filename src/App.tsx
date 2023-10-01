@@ -4,7 +4,7 @@ import { defaultTheme } from './styles/themes/default'
 import { GlobalStyle } from './styles/global'
 import { Router } from './Router'
 import { BrowserRouter } from 'react-router-dom'
-import { CyclesContextProvider } from './contexts/CyclesContext'
+import { CyclesContextProvider } from './projects/IgniteTimer/contexts/CyclesContext'
 
 export function App() {
   return (
