@@ -8,7 +8,6 @@ export const HomeContainer = styled.main`
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 100vw;
   height: 80vh;
 
   form {
