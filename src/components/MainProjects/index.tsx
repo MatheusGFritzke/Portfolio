@@ -4,6 +4,7 @@ import {
   ProjectContainer,
 } from './styles'
 import countdonwImage from '../../assets/images/countdown.png'
+import loadginImage from '../../assets/images/loading-image.jpeg'
 import Cards from '../Cards'
 
 const mobile = window.innerWidth < 600
@@ -17,25 +18,25 @@ const cards = [
     content: 'Aplicativo para intercalar tarefas',
   },
   {
-    route: '/projects/timer/countdown',
+    route: '/projects',
     mobile,
-    image: countdonwImage,
-    title: 'Countdown app',
-    content: 'Aplicativo para intercalar tarefas',
+    image: loadginImage,
+    title: 'Waiting for new project',
+    content: 'Description',
   },
   {
-    route: '/projects/timer/countdown',
+    route: '/projects',
     mobile,
-    image: countdonwImage,
-    title: 'Countdown app',
-    content: 'Aplicativo para intercalar tarefas',
+    image: loadginImage,
+    title: 'Waiting for new project',
+    content: 'Description',
   },
   {
-    route: '/projects/timer/countdown',
+    route: '/projects',
     mobile,
-    image: countdonwImage,
-    title: 'Countdown app',
-    content: 'Aplicativo para intercalar tarefas',
+    image: loadginImage,
+    title: 'Waiting for new project',
+    content: 'Description',
   },
 ]
 
@@ -56,8 +57,8 @@ export function MainProjects() {
             <ProjectContainer>
               <Cards
                 route={card.route}
-                mobile={mobile}
-                image={countdonwImage}
+                mobile={card.mobile}
+                image={card.image}
                 title={card.title}
                 content={card.content}
               />
