@@ -8,7 +8,7 @@ export const HomeContainer = styled.main`
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 60vh;
+  height: 75vh;
 
   form {
     display: flex;

@@ -6,7 +6,7 @@ export const HeaderContainer = styled.header`
   margin: auto;
   justify-content: space-between;
   max-width: 60%;
-  margin-top: 4rem;
+  margin-top: 1.5rem;
 
   nav {
     display: flex;
