@@ -4,6 +4,7 @@ import { Portfolio } from './pages/Portifolio/Home'
 import { MainProjects } from './components/MainProjects'
 import { Timer } from './projects/IgniteTimer/pages/Timer'
 import { MainHistory } from './projects/IgniteTimer/pages/MainHistory'
+import { TodoList } from './projects/TodoList'
 
 export function Router() {
   return (
@@ -13,6 +14,7 @@ export function Router() {
         <Route path="/projects" element={<MainProjects />} />
         <Route path="/projects/timer/countdown" element={<Timer />} />
         <Route path="/projects/timer/history" element={<MainHistory />} />
+        <Route path="/projects/todo/main" element={<TodoList />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Route>
