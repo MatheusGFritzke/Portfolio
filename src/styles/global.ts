@@ -24,4 +24,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
     }
 
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
 `

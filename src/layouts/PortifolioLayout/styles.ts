@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
   /* height: calc(100vh); */
-  margin: auto;
+  /* margin: auto; */
   /* padding: 2.5rem; */
 
   /* background: ${(props) => props.theme['gray-800']}; */
@@ -10,5 +10,5 @@ export const LayoutContainer = styled.div`
 
   /* display: flex; */
   /* flex-direction: column; */
-  max-width: 100rem;
+  /* max-width: 100rem; */
 `

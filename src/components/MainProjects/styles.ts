@@ -2,29 +2,44 @@ import styled from 'styled-components'
 
 export const MainProjectsContainer = styled.div`
   display: flex;
+  /* grid-template-columns: 1fr 1fr; */
   justify-content: center;
-  overflow: auto;
+  overflow: hidden;
   flex-direction: column;
   margin: auto;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem 0;
   padding-top: 2rem;
+  justify-items: center;
+  max-width: 60rem;
 
   &:last-child {
     padding-bottom: 2.5rem;
   }
 
-  @media (min-width: 600px) {
-    flex-direction: row;
+  @media (max-width: 600px) {
+    /* max-width: vw; */
   }
+
+  @media (min-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+`
+
+export const ContainerWrapper = styled.div`
+  display: flex;
+  /* flex-wrap: wrap; */
+  //justify-content: space-between; /* Add this */
+  //max-width: 100%; /* Add this */
 `
 
 export const ProjectContainer = styled.div`
   justify-content: center;
   display: flex;
   align-items: center;
-  max-width: 80vw;
-  max-height: 12rem;
+  max-width: 90vw;
+  /* max-height: 12rem; */
   border-radius: 8px;
   overflow: hidden;
   border: 2px solid ${(props) => props.theme['gray-400']};

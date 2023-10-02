@@ -5,6 +5,11 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0.25rem 0 0 1rem;
+  overflow: hidden;
+
+  @media (min-width: 900px) {
+    padding: 0;
+  }
 `
 export const MenuIcon = styled.div`
   gap: 0.5rem;
