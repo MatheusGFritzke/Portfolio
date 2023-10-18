@@ -10,7 +10,7 @@ export function Header() {
     <>
       <HeaderContainer>
         {width < 900 ? <MuiDrawer /> : <ResponsiveAppBar />}
-        {width < 900 && <ChangeTheme />}
+        {width < 900 && <ChangeTheme disabled />}
       </HeaderContainer>
     </>
   )

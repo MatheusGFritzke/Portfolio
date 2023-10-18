@@ -14,6 +14,7 @@ import Button from '@mui/material/Button'
 // import AdbIcon from '@mui/icons-material/Adb'
 import { NavLink } from 'react-router-dom'
 import { defaultStyleObject } from '../MiuDrawer/defaultStyleNavLink'
+import ChangeTheme from '../ChangeTheme'
 
 const pages = [{ name: 'Projetos', route: '/projects' }]
 // const settings = ['Developing']
@@ -165,6 +166,7 @@ export function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box> */}
+          <ChangeTheme disabled />
         </Toolbar>
       </Container>
     </AppBar>

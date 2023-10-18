@@ -50,11 +50,17 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }))
 
-export default function ChangeTheme() {
+interface ChangeThemeProps {
+  disabled?: boolean
+}
+
+export default function ChangeTheme({ disabled }: ChangeThemeProps) {
   return (
     <FormGroup>
       <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+        control={
+          <MaterialUISwitch sx={{ m: 1 }} defaultChecked disabled={disabled} />
+        }
         label=""
       />
     </FormGroup>
